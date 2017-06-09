@@ -1,0 +1,82 @@
+/**app.wxss**/
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+/*行外*/
+.list_ {
+  width: 100%;
+}
+
+/*单行列表*/
+.list_row {
+  position: relative;
+  display: flex;
+  padding: 30rpx 80rpx 30rpx 30rpx;
+  align-items: left;
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+}
+
+.list_row .flex-item {
+  display: block;
+}
+.list_row .flex-item text{
+ font-weight:600;
+ display: inline-block;
+}
+/*单行右侧图片*/
+.list_row .list_row_img {
+  position: absolute;
+  top: 50%;
+  margin-top: -20rpx;
+  right: 44rpx;
+  width: 32rpx;
+  height: 40rpx;
+}
+.list_show{
+  padding: 20rpx 80rpx 20rpx 30rpx;
+  border-bottom: 1px solid #eee;
+}
+.list_show view{
+  margin-bottom: 5rpx;
+}
+
+/*表单*/
+.container_form .form_ {
+  width: 100%;
+}
+
+.form_ .section_ {
+  flex-direction: row;
+  display: flex;
+  padding: 35rpx 30rpx;
+  border-top:1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.form_ .section_col{
+  flex-direction: column;
+  padding: 35rpx 30rpx;
+  border-top:1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.form_ .label_v {
+  width: 35%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.form_ .input_v {
+  width: 65%;
+  white-space: pre-wrap;
+}
+.form_ label, .form_ input {
+  vertical-align: middle;
+  white-space: pre-wrap;
+}

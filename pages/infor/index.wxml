@@ -1,0 +1,17 @@
+<view class="index">
+  <view class="body">
+    <view class="widgets">
+      <block wx:for-items="{{list}}" wx:key="index" wx:if="{{item.toggle}}">
+        <navigator url="{{item.apphref}}">
+          <view class="widgets__item" >
+            <view  class="widgets__info" id="{{item.id}}" bindtap="widgetsToggle">
+               <image class="widgets__info-left" src="{{item.src}}" mode="aspectFill" />
+               <text class="widgets__info-name">{{item.name}}(<text class="widgets_font-red">{{item.num}}</text>)</text>
+               <image class="widgets__info-right" src="/images/arrowright.png" mode="aspectFill" />
+            </view>
+          </view>
+        </navigator>
+      </block>
+    </view>
+  </view>
+</view>

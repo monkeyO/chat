@@ -1,0 +1,10 @@
+<view class="container">
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+     用户名:
+     <input type="text" bindinput="userNameInput" />
+      密码:
+      <input type="text" bindinput="userPassworldInput" password="true"/>
+      <button bindtap="loginIn">登录</button>
+  </view>
+</view>

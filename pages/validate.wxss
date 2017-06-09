@@ -1,0 +1,35 @@
+page {  
+  display: block;  
+  min-height: 100%;  
+  background-color:#F4F4F4;  
+}  
+.usermotto{
+    margin:10vh auto 15vh;
+    width:90%;
+}
+.container input{
+    background: #eee;
+    margin-bottom:2vh;
+    padding: 2vh;
+    height: 4.5vh;
+}
+.validate{
+    display: flex;
+    flex-flow: row;
+    height: 8.5vh;
+}
+.validate input{
+    flex: 4;
+}
+.validate text{
+     width: 1vh;
+}
+.validate button{
+    font-size: 3vh;
+    flex: 2.5;
+    line-height: 8.5vh; 
+}
+.go_btn{
+    margin-top: 3vh;
+    line-height: 8.5vh; 
+}

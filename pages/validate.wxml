@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="usermotto"> 
+      <input type="text" placeholder="输入真实姓名" name="name" bindinput="userNameInput"/>
+      <input type="text" placeholder="输入手机号" name="phone" bindinput="userTelInput"/>
+      <view class="validate">
+           <input type="text" placeholder="输入验证码" name="valCode" bindinput="valCodeInput"/>
+           <text></text>
+           <button type="primary" disabled="{{disabled}}" bindtap="getCode">{{code}}</button>  
+      </view>
+      <button  type="primary" class="go_btn" bindtap="goBtn">确定</button>
+   </view>
+</view>

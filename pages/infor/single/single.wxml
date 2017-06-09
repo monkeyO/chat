@@ -1,0 +1,37 @@
+
+<!--主题内容-->
+<view class="container">
+ 
+  <view class="list_" wx:for-items="{{infoData}}" wx:key="index">
+    
+    <view class="list_row" id="{{item.id}}" style="flex-direction:column;"  bindtap="widgetsToggle">
+      <text class="flex-item">
+        <text>公司名称:</text>{{item.comname}}
+      </text>
+      <image class="list_row_img" src="/images/arrowdown.png" mode="aspectFill" />
+    </view>
+       
+     <view class="list_show" wx:if="{{toggle==item.id}}"> 
+         <view>
+            <text>类型:</text>{{item.taskType}}
+         </view>
+         <view >
+            <text>状态:</text>
+            <text wx:if="{{item.isFinished==0}}">在办</text>
+            <text wx:elif="{{item.isFinished==1}}">已完成</text>
+            <text wx:else>未识别类型</text>
+         </view>
+         <view>
+            <text>联系人:</text>{{item.contactsname}}
+         </view>
+         <view>
+            <text>联系人电话:</text>{{item.contactsphone}}
+         </view>
+         <view>
+            <text>内容:</text>{{item.taskContent}}
+         </view>
+
+     </view>
+  
+  </view><!--list_ end-->
+</view>

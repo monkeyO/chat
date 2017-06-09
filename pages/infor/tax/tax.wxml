@@ -1,0 +1,15 @@
+
+<!--主题内容-->
+<view class="container">
+  <view class="list_" wx:for-items="{{infoData}}" wx:key="index">
+    <view class="list_row" id="{{item.id}}" style="flex-direction:column;"  bindtap="widgetsToggle">
+      <text class="flex-item">
+        <text>公司名称:</text>{{item.name}}
+      </text>
+      <text class="flex-item">
+         <text>报税数:</text>{{item.taxMonthCount}}
+      </text>
+      <image class="list_row_img" src="/images/arrowright.png" mode="aspectFill" />
+    </view>
+  </view><!--list_ end-->
+</view>

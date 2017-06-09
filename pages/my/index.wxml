@@ -1,0 +1,49 @@
+
+<!--index.wxml-->
+<view class="container">
+  <view bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+</view>
+
+<view class="body">
+  <view class="widgets__item" bindtap="worklog">
+    <view class="widgets__info">
+      <text class="widgets__info-name">工作日志</text>
+      <image class="widgets__info-img" src="/images/arrowright.png" mode="aspectFill" />
+    </view>
+  </view>
+</view> 
+<!--
+ <view class="widgets__item">
+    <view class="widgets__info">
+      <text class="widgets__info-name">我要审核</text>
+      <image class="widgets__info-img" src="/images/arrowright.png" mode="aspectFill" />
+    </view>
+  </view>
+  <view class="widgets__item">
+    <view class="widgets__info">
+      <text class="widgets__info-name">我的工作日志</text>
+      <image class="widgets__info-img" src="/images/arrowright.png" mode="aspectFill" />
+    </view>
+  </view>
+
+   <view class="widgets__item">
+    <view class="widgets__info">
+      <text class="widgets__info-name">公司通讯录</text>
+      <image class="widgets__info-img" src="/images/arrowright.png" mode="aspectFill" />
+    </view>
+  </view>
+
+
+  <view class="widgets__item" bindtap="dropout">
+    <view class="widgets__info">
+      <text class="widgets__info-name">退出当前账号</text>
+      <image class="widgets__info-img" src="/images/arrowright.png" mode="aspectFill" />
+    </view>
+  </view>
+
+</view>-->
+
+<!--body结束-->

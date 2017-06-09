@@ -1,0 +1,61 @@
+page{
+  height: 100%;
+}
+.index{
+    background-color: #FBF9FE;
+    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+    flex: 1;
+    min-height: 100%;
+    font-size: 32rpx;
+}
+.head{
+    padding: 80rpx;
+    line-height: 1;
+}
+.body{
+    overflow: hidden;
+}
+.title{
+    font-size: 52rpx;
+}
+.desc{
+    margin-top: 10rpx;
+    color: #888888;
+    font-size: 28rpx;
+}
+
+.widgets__item{
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    border-radius: 4rpx;
+    cursor: pointer;
+}
+.widgets__info{
+    display: flex;
+    padding: 20rpx;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+.widgets__info-name{
+    flex: 1;
+}
+.widgets__info-left{
+    width: 100rpx;
+    height: 100rpx;
+    margin-right: 30rpx;
+}
+.widgets__info-right{
+     width: 35rpx;
+     height: 35rpx;
+}
+.widgets_font-red{
+    color:red;
+}
+.widgets__list{
+    display: none;
+}
+

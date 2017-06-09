@@ -1,0 +1,24 @@
+<!--主题内容-->
+<view class="container">
+  <view class="list_" wx:for-items="{{infoData}}" wx:key="index"> 
+    <view class="list_row" id="{{item.id}}" style="flex-direction:column;"  bindtap="widgetsToggle">
+      <text class="flex-item">
+        <text>费用名称:</text>{{item.feename}}
+      </text>
+      <image class="list_row_img" src="/images/arrowdown.png" mode="aspectFill" />
+    </view>
+     <view  wx:if="{{toggle==item.id}}">     
+         <view wx:if="{{item.children.length>0}}">
+             <view class="list_show" wx:for-items="{{item.children}}"> 
+               <view>
+                 <text>{{item.month}}</text>{{item.recmoney}}元
+               </view> 
+              </view> 
+          </view>
+          <view class="list_show" wx:else>
+              <text>暂无数据</text>
+          </view>
+     </view>
+     
+  </view><!--list_ end-->
+</view>

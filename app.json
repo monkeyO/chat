@@ -1,0 +1,40 @@
+{
+  "pages":[  
+    "pages/infor/index",
+    "pages/my/index",
+    "pages/infor/pro/pro",
+    "pages/infor/single/single",
+    "pages/infor/fee/fee",
+    "pages/infor/fee/detail",
+    "pages/infor/keep/keep",
+    "pages/infor/keep/detail",
+    "pages/infor/tax/tax",
+    "pages/infor/tax/detail",
+    "pages/login",
+    "pages/validate"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#12BBD6",
+    "navigationBarTitleText": "财务之家",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh":true
+  },
+    "tabBar": {
+    "list": [{
+      "pagePath": "pages/infor/index",
+      "text": "业务查询",
+      "iconPath":"images/search.png",
+      "selectedIconPath":"images/sel_search.png"
+    },{
+      "pagePath": "pages/my/index",
+      "text": "个人中心",
+       "iconPath":"images/user.png",
+       "selectedIconPath":"images/sel_user.png"
+    }
+    ],
+     "color": "#000000",
+     "selectedColor":"#74ba48",
+     "borderStyle":"black"
+  }
+}

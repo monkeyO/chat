@@ -1,0 +1,11 @@
+/* pages/login.wxss */
+.user-motto{
+    display: block;
+    text-align: center;
+    margin:15vh auto;
+}
+.container input{
+    background: #eee;
+    margin-bottom:2vh;
+    padding: 2px 5px;
+}
